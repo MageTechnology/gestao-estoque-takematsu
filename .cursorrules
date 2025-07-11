@@ -1,0 +1,33 @@
+# Regras do Projeto
+
+## Stack Principal
+- Next.js 14 (App Router)
+- TypeScript
+- ShadCN UI
+- TailwindCSS
+- Supabase (PostgreSQL + pgvector)
+- LangChain.js
+- OpenAI
+- Zustand (gerenciamento de estado)
+- React Hook Form
+
+## Estrutura do Projeto
+/app                 # App Router do Next.js
+  /api              # API Routes
+/components
+  /ui               # Componentes ShadCN
+/lib
+  /utils.ts         # Funções utilitárias
+/docs                # Documentação do projeto
+
+## Diretrizes de Código
+- **Sempre use TypeScript com tipagem estrita.**
+- Evite `any` a todo custo.
+- Mantenha componentes React pequenos e focados (máximo 200 linhas).
+- Valide todas as entradas de API com Zod.
+- Implemente streaming de respostas para o chat sempre que possível para melhor UX.
+
+## Comandos Úteis
+- `pnpm dev`: Inicia o servidor de desenvolvimento.
+- `pnpm test`: Roda os testes com Jest.
+- `npx supabase gen types typescript --local > types/supabase-generated.ts`: Gera os tipos do banco de dados.
