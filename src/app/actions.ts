@@ -3,7 +3,7 @@
 import { Produto } from '@/types';
 import { revalidatePath } from 'next/cache';
 
-const N8N_WEBHOOK_URL = 'https://webhookn8n.mage.technology/webhook/estoque';
+const N8N_WEBHOOK_URL = 'https://webhookn8n.mage.technology/webhook/zaiko/ingredientes';
 
 interface ContagemInfo {
   responsavel: string;
